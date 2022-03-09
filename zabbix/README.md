@@ -25,12 +25,16 @@ the communication will be one way like so, `Zabbix-Agent -> Zabbix-Proxy -> Zabb
   
 $ wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix/zabbix-proxy-pgsql_6.0.0-1%2Bubuntu20.04_amd64.deb
 $ sudo dpkg -i zabbix-proxy-pgsql_6.0.0-1+ubuntu20.04_amd64.deb
+
+### If dpkg fails due to dependencies ###
+
+$ sudo apt-get install -f
 ```
 * Import sql script
 ```shell
 ### Change version, os, and architecture as needed ###
 
-$ wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix/zabbix-sql-scripts_6.0.1-1%2Bubuntu20.04_all.deb
+$ sudo wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix/zabbix-sql-scripts_6.0.1-1%2Bubuntu20.04_all.deb
 $ sudo dpkg -i zabbix-sql-scripts_6.0.1-1+Bubuntu20.04_all.deb
 ```
 * Initialize Database
@@ -65,7 +69,7 @@ $ sudo systemctl status zabbix-proxy
 * Import debian package
 ```shell
 ### Change version, os, and architecture as needed ###
-$ wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix/zabbix-agent_6.0.1-1%2Bubuntu20.04_amd64.deb
+$ sudo wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix/zabbix-agent_6.0.1-1%2Bubuntu20.04_amd64.deb
 $ dpkg -i zabbix-agent_6.0.1-1+ubuntu20.04_amd64.deb
 ```
 * Configure Zabbix-Agent
