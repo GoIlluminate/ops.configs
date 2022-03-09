@@ -15,7 +15,7 @@ the communication will be one way like so, `Zabbix-Agent -> Zabbix-Proxy -> Zabb
 ## Debian Packages
 * `https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix/`
 
-##Installation
+## Installation
 ### Linux
 #### Zabbix-Proxy (runs on Proxy VM)
 ##### Installation
