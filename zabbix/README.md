@@ -60,8 +60,7 @@ $ sudo systemctl enable zabbix-proxy
 $ sudo systemctl status zabbix-proxy
 ```
 
-#### Zabbix-Proxy (runs on Net Prod VM and DB Prod VM)
-##### Illuminate only monitor Net VM and DB VM in Production environment
+#### Zabbix-Proxy (runs on Net Prod VM and DB Prod VM) - Illuminate only monitor Net VM and DB VM in Production environment
 ##### Installation
 * Import debian package
 ```shell
