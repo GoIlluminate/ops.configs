@@ -95,3 +95,18 @@ $ sudo systemctl enable zabbix-agent
 ### Check if zabbix-proxy service is running ###
 $ sudo systemctl status zabbix-agent
 ```
+* Allow zabbix to execute `rabbitmqctl`
+```shell
+$ sudo vi /etc/zabbix/zabbix_agentd.d/rabbitmq_userparameters.conf
+
+### Copy content of rabbitmq_userparameters.conf in this repository then save
+
+$ sudo su
+$ cd /etc/sudoers.d
+$ sudo visudo -f zabbix_rabbitmq_access
+
+### visudo will prevent wrong syntax
+### Copy content of zabbix_rabbitmq_access in this repository then save
+
+$ sudo systemctl restart zabbix-agent
+```
