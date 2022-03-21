@@ -74,7 +74,7 @@ $ dpkg -i zabbix-agent_6.0.1-1+ubuntu20.04_amd64.deb
 ```
 * Configure Zabbix-Agent
 ```shell
-$ cd /etc/zabbix/zabbix-agentd.conf
+$ sudo vi /etc/zabbix/zabbix-agentd.conf
 
 ### Match the content of zabbix_agentd.conf in this repository ###
 
