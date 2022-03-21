@@ -1,0 +1,6 @@
+# RabbitMQ Server Stats Sudoers
+#
+# Grants the zabbix group non-password sudo access to rabbitmqctl
+#
+
+%zabbix ALL=(ALL) NOPASSWD: /usr/sbin/rabbitmqctl
