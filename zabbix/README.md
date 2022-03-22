@@ -46,7 +46,7 @@ $ sudo cat /usr/share/doc/zabbix-sql-scripts/postgresql/proxy.sql | sudo -u zabb
 ```
 * Configure Zabbix-Proxy
 ```shell
-$ cd /etc/zabbix/zabbix_proxy.conf
+$ sudo vi /etc/zabbix/zabbix_proxy.conf
 
 ### Match the content of zabbix_proxy.conf in this repository ###
 
