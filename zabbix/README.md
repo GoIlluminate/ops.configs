@@ -96,7 +96,7 @@ $ sudo systemctl enable zabbix-agent
 ### Check if zabbix-proxy service is running ###
 $ sudo systemctl status zabbix-agent
 ```
-* Allow zabbix to execute `rabbitmqctl`
+* Allow zabbix to execute `rabbitmqctl` (Only do this step on Net-Prod)
 ```shell
 $ sudo vi /etc/zabbix/zabbix_agentd.d/rabbitmq_userparameters.conf
 
