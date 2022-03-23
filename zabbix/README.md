@@ -41,8 +41,8 @@ $ sudo apt-get -y install postgresql-14 ### Change version as needed
 ```shell
 ### Change version, os, and architecture as needed ###
 
-$ sudo wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix/zabbix-sql-scripts_6.0.1-1%2Bubuntu20.04_all.deb
-$ sudo dpkg -i zabbix-sql-scripts_6.0.1-1+Bubuntu20.04_all.deb
+$ sudo wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix/zabbix-sql-scripts_6.0.2-1%2Bubuntu20.04_all.deb
+$ sudo dpkg -i zabbix-sql-scripts_6.0.2-1+ubuntu20.04_all.deb
 ```
 * Initialize Database
 ```shell
