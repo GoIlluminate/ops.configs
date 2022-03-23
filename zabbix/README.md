@@ -29,7 +29,13 @@ $ sudo dpkg -i zabbix-proxy-pgsql_6.0.0-1+ubuntu20.04_amd64.deb
 ### If dpkg fails due to dependencies ###
 
 $ sudo apt-get install -f
-$ sudo apt-get -y install postgresql
+
+### Install Postgresql, Zabbix-proxy require at least Postgres 13
+
+$ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+$ sudo apt-get update
+$ sudo apt-get -y install postgresql-14 ### Change version as needed
 ```
 * Import sql script
 ```shell
