@@ -56,4 +56,4 @@ $group.SetInfo()
 
 # Add Analytics Group to "Data Readers" Role
 
-Add-RoleMember -MemberName "$ENV:COMPUTERNAME\Illuminate Analytics Users" -Database "IlluminateAnalytics" -RoleName "Data Readers"
+Add-RoleMember -Server . -MemberName "$ENV:COMPUTERNAME\Illuminate Analytics Users" -Database "IlluminateAnalytics" -RoleName "Data Readers"
